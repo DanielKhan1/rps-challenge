@@ -1,0 +1,24 @@
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,1200italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="main.css">
+
+<div class="wrapper">
+	<h1>Welcome  <%= @player_name %>!</h1>
+
+	<p>ROCK, PAPER, SCISSORS!</p>
+
+	<h3>Do you remember the Rules?:</h3>
+
+	<ul>
+		<li>Rock beats Scissors</li>
+		<li>Scissors beats Paper</li>
+		<li>Paper beats Rock</li>
+	</ul>
+
+	<h3>Make your move punk!</h3>
+
+	<form action="/move" method="post">
+		<input type="submit" value="Rock" name="move">
+		<input type="submit" value="Paper" name="move">
+		<input type="submit" value="Scissors" name="move">
+	</form>
+</div>
